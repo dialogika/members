@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sign Up Form | Public Speaking Online: Dialogika</title>
+  <meta content="Thank You For Puchasing" name="description">
+  <meta content="Public Speaking" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Spreadsheet API Form Pembayaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/L4wJepNcbzBg4SqK/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Admin akan langsung menghubungi Anda :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+      function Subcription (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/18511/",
+          type:"post",
+          data:$("#subcriptions").serializeArray(),
+          success: function(){
+            // $('#subcription-modal').modal('show');
+            alert("Email Has Been Saved :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Pixel Facebook -->
+    <!-- DEC 2021 -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- END DEC 2021 -->
+  <!-- End Pixel Facebook -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+  
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3V2Z2M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
+        <i class="bi bi-phone"></i> <a href="tel:+6282137760669">0821 377 60 669</a>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+       <a href="#" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <br><br><br><br>
+          <h2>Form Pendataan</h2>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
+            <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" onsubmit="SubForm()" class="php-email-form needs-validation">
+              <div class="form-group">
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
+                <div class="validate"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="Email" id="whatsapps" placeholder="Email*" required="">
+                  <div class="validate"></div>
+                </div>  
+              </div>
+                
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <input type="number" class="form-control" name="Age" id="ages" pattern="[0-9]{1,2}" placeholder="Umur*" required="">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group">
+                  <select name="Program" id="programs" class="form-select" required>
+                    <option value="" selected disabled value="">Gender</option>
+                    <optgroup label="------------">
+                      <option value="Male">Pria</option>
+                      <option value="Female">Wanita</option>
+                    </optgroup>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group">
+                  <select name="Program" id="programs" class="form-select" required>
+                    <option value="" selected disabled value="">Status</option>
+                    <optgroup label="------------">
+                      <option value="Single">Single</option>
+                      <option value="Married">Menikah</option>
+                      <option value="Divorce">Cerai</option>
+                    </optgroup>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <select name="Program" id="programs" class="form-select" required>
+                    <option value="" selected disabled value="">Program Yang Diambil</option>
+                    <optgroup label="Online Class">
+                      <option>Basic Plus: 499K</option>
+                      <option>Presentasi: 699K</option>
+                      <option>Interview: 699K</option>
+                      <option>Pitching: 799K</option>
+                      <option>Design Thinking: 799K</option>
+                    </optgroup>
+                    <optgroup label="Paket Hemat Online">
+                      <option>Paket Hemat: Basic + Presentasi: 975K</option>
+                      <option>Paket Hemat: Basic + Pitching: 997K</option>
+                      <option>Paket Hemat: Basic + Design Thinking + Pitching: 1.775K</option>
+                    </optgroup>
+                    <optgroup label="Request & Private">
+                      <option>Private Class</option>
+                      <option>Requested Program</option>
+                    </optgroup>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <select name="Program" id="programs" class="form-select" required>
+                    <option value="" selected disabled value="">Payment</option>
+                    <optgroup label="------------">
+                      <option value="Lunas">Lunas</option>
+                      <option value="Downpayment">DP</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="Work" id="works" placeholder="Perkerjaan*" required="">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="Position" id="positions" placeholder="Posisi Dikerjaan*" required="">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <select class="d-none" name="Timestamp">
+                <option id="timestamp"></option>
+              </select>
+              <div class="form-group">
+                <textarea class="form-control" name="Reason" id="reasons" rows="8" placeholder="Goal yang ingin dicapai"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="form-text">
+                *Tombol akan menyala apabila nama, nomor hp, profesi dan domisili telah terisi.
+              </div>
+              <div class="text-center">
+                <button type="submit" id="submits" class="send_contact" data-bs-toggle="modal" data-bs-target="#notifications">Confirm</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>Jatempanol, Tempel, Caturtunggal,<br> Depok Sub-District, Sleman Regency,<br> Special Region of Yogyakarta 55281</p>
+                </div>
+              </div>
+              <div class="col-md-6" >
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>admin@dialogika.co<br></p>
+                </div>
+              </div>
+              <div class="col-md-6" >
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Whatsapp Us</h3>
+                  <p>+62 821 377 60 669<br></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <!-- <h3>Medilab</h3> -->
+            <a href="#" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            <p>
+              Unleash Your Full Potential | Menyediakan, Membantu dan Menjadi Platform Untuk Anda Menggapai Mimpi dan Membuka Potensi Diri.<br><br>
+              <strong>Phone:</strong> +62 821 377 60 669<br>
+              <strong>Email:</strong> admin@dialogika.co<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://talent.dialogika.co" onclick="return false;">Dialogika Intern</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://club.dialogika.co" onclick="return false;">Dialogika Club</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://blog.dialogika.co" onclick="return false;">Dialogika Blog</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://event.dialogika.co" onclick="return false;">Dialogika Event</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://course.dialogika.co" onclick="return false;">Dialogika eCourse</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/basic-plus.html">Basic Plus</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/presentation-class.html">Presentation</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/pro-class.html">Pro Class</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/program/english-class.html">English Class</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> 
+                <a href="https://dialogika.co/custom/private-class.html">Private Class</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Silahkan tinggalkan email dibawah ini kemudian klik tombol subscribe</p>
+            <form action="javascript:void" role="form" id="subcriptions" method="post">
+              <input type="email" name="Email" placeholder="Email"><input type="submit" value="Subscribe" onclick="Subcription()">
+              <input type="text" class="form-control d-none" name="Funnel" value="Landing Page: after eBook" readonly>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dialogika</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/6282137760669" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- ======= Modal ======= -->
+  <div class="modal fade" id="successModal">
+    <div class="modal-dialog modal-dialog-centered position-absolute top-50 start-50 translate-middle" style="width: 18rem;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mohon Menunggu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container tengah">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h1>Anda Akan Segera Terhubung ke Whatsapp</h1>
+            <div class="card border-primary mb-3" style="margin-top:20px;">
+              <div class="card-body">
+                Selamat melangkah ke <b>perubahan yang lebih baik</b> dan meng-akselerasi mimpi Anda
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p class="text-center"><b></b> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script>
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes();
+    var dateTime = date+'    '+time;
+    document.getElementById("timestamp").innerHTML = dateTime;
+  </script>
+
+</body>
+
+</html>
