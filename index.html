@@ -37,11 +37,11 @@
     <script>
       function SubForm (){
         $.ajax({
-          url:"https://api.apispreadsheets.com/data/L4wJepNcbzBg4SqK/",
+          url:"https://api.apispreadsheets.com/data/Ff8xyTCKAz9jfX4d/",
           type:"post",
           data:$("#myForm").serializeArray(),
           success: function(){
-            alert("Admin akan langsung menghubungi Anda :)")
+            alert("Data Telah Tersimpan")
           },
           error: function(){
             alert("There was an error :(")
@@ -181,7 +181,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-4 form-group">
-                  <select name="Program" id="programs" class="form-select" required>
+                  <select name="Gender" id="programs" class="form-select" required>
                     <option value="" selected disabled value="">Gender</option>
                     <optgroup label="------------">
                       <option value="Male">Pria</option>
@@ -191,7 +191,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-4 form-group">
-                  <select name="Program" id="programs" class="form-select" required>
+                  <select name="Status" id="programs" class="form-select" required>
                     <option value="" selected disabled value="">Status</option>
                     <optgroup label="------------">
                       <option value="Single">Single</option>
@@ -226,7 +226,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <select name="Program" id="programs" class="form-select" required>
+                  <select name="Payment" id="programs" class="form-select" required>
                     <option value="" selected disabled value="">Payment</option>
                     <optgroup label="------------">
                       <option value="Lunas">Lunas</option>
@@ -236,12 +236,16 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-4 form-group">
                   <input type="text" class="form-control" name="Work" id="works" placeholder="Perkerjaan*" required="">
                   <div class="validate"></div>
                 </div>
-                <div class="col-md-6 form-group">
+                <div class="col-md-4 form-group">
                   <input type="text" class="form-control" name="Position" id="positions" placeholder="Posisi Dikerjaan*" required="">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group">
+                  <input type="text" class="form-control" name="City" id="cities" placeholder="Domisili Kota*" required="">
                   <div class="validate"></div>
                 </div>
               </div>
@@ -424,7 +428,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/whatsapp.js"></script>
+  <!-- <script src="assets/js/whatsapp.js"></script> -->
   <script>
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
