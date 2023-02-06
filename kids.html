@@ -160,29 +160,31 @@
           <div class="col-lg-6">
             <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" onsubmit="SubForm()" class="php-email-form needs-validation">
               <div class="form-group">
-                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Orang Tua*" required>
                 <div class="validate"></div>
               </div>
 
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp Orang Tua*" required="">
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="Email" id="whatsapps" placeholder="Email*" required="">
+                  <input type="email" class="form-control" name="Email" id="whatsapps" placeholder="Email Orang Tua*" required="">
                   <div class="validate"></div>
                 </div>  
               </div>
+
+              <hr/>
                 
               <div class="row">
                 <div class="col-md-4 form-group">
-                  <input type="number" class="form-control" name="Age" id="ages" pattern="[0-9]{1,2}" placeholder="Umur*" required="">
+                  <input type="number" class="form-control" name="Age" id="ages" pattern="[0-9]{1,2}" placeholder="Umur Anak*" required="">
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-4 form-group">
                   <select name="Gender" id="programs" class="form-select" required>
-                    <option value="" selected disabled value="">Gender</option>
+                    <option value="" selected disabled value="">Gender Anak</option>
                     <optgroup label="------------">
                       <option value="Male">Pria</option>
                       <option value="Female">Wanita</option>
@@ -192,7 +194,7 @@
                 </div>
                 <div class="col-md-4 form-group">
                   <select name="Status" id="programs" class="form-select" required>
-                    <option value="" selected disabled value="">Status</option>
+                    <option value="" selected disabled value="">Status Orang Tua</option>
                     <optgroup label="------------">
                       <option value="Single">Single</option>
                       <option value="Married">Menikah</option>
@@ -202,6 +204,9 @@
                   <div class="validate"></div>
                 </div>
               </div>
+
+              
+
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" class="form-control" name="Program" id="programs" placeholder="Program Yang Diambil sesuai invoice*" required="">
@@ -219,11 +224,11 @@
               </div>
               <div class="row">
                 <div class="col-md-4 form-group">
-                  <input type="text" class="form-control" name="Work" id="works" placeholder="Perkerjaan*" required="">
+                  <input type="text" class="form-control" name="Work" id="works" placeholder="Perkerjaan Orang Tua*" required="">
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-4 form-group">
-                  <input type="text" class="form-control" name="Position" id="positions" placeholder="Posisi Dikerjaan*" required="">
+                  <input type="text" class="form-control" name="Position" id="positions" placeholder="Posisi Dikerjaan Orang Tua*" required="">
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-4 form-group">
@@ -241,7 +246,7 @@
                 <option id="timestamp"></option>
               </select>
               <div class="form-group">
-                <textarea class="form-control" name="Reason" id="reasons" rows="8" placeholder="Goal yang ingin dicapai"></textarea>
+                <textarea class="form-control" name="Reason" id="reasons" rows="8" placeholder="Goal yang ingin dicapai anak"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="form-text">
